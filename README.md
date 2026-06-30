@@ -1,16 +1,16 @@
-# 🗺️ qgis-geometry-matching
+# qgis-geometry-matching
 
-An advanced, automated **QGIS Processing Algorithm** developed in Python to analyze, match, and classify topological and spatial relationships between two polygon vector layers. It is designed to streamline automated cadastral data reconciliation and parcel synchronization pipelines.
+A custom QGIS Processing Algorithm in Python for automated cadastral data reconciliation and spatial relationship classification.
 
 ---
 
-## 🚀 Key Parameters
+## Key Parameters
 * **Layer A & B**: The input polygon layers for comparison (e.g., base parcel layer vs. target tax layer).
 * **Overlap Match Threshold**: The minimum intersection area percentage required to validate and classify a relationship (Default: `0.70` / 70%).
 
 ---
 
-## 🛠️ Workflow Methodology
+## Workflow Methodology
 The algorithm executes spatial processing in four streamlined stages:
 
 1. **Spatial Indexing (R-Tree Architecture)**
@@ -25,20 +25,20 @@ The algorithm executes spatial processing in four streamlined stages:
    * **Pass 3 (Need Review)**: Isolates "Need Review" features for low-overlap outliers or topologically invalid geometries.
 
 ---
-
-## 🧠 Development & Academic Integrity
-* **Workflow & Logic**: The core conceptual architecture, spatial indexing strategy, and multi-pass classification logic were entirely designed and structured by the author.
-* **Implementation**: Large Language Models (AI) were utilized strictly as technical coding assistants to accelerate the implementation of Python syntax, ensuring full compatibility with the native `QgsProcessingAlgorithm` framework.
-
----
-
-## 📈 Commitment to Continuous Improvement
-As I continue to develop my skills in spatial data science, I am dedicated to continuous learning and technical refinement. I actively welcome feedback from the GIS community and domain experts to improve the robustness and efficiency of this algorithm. This repository represents a personal project that I plan to iterate upon as I sharpen my technical capabilities.
-
----
-
-## 💻 How to Use
+## How to Use
 1. Copy the full script from `geometry-matching.py`.
 2. In QGIS, open the **Processing Toolbox** (`Ctrl+Alt+T`).
 3. Click the **Python icon** 🐍 -> **Create New Script from Template**.
 4. Paste the code into the editor, click save, and the tool will instantly appear under your **Custom Scripts** menu.
+
+---
+
+## Commitment to Continuous Improvement
+As I continue to develop my skills in spatial data science, I am dedicated to continuous learning and technical refinement. I actively welcome feedback from the GIS community and domain experts to improve the robustness and efficiency of this algorithm. This repository represents a personal project that I plan to iterate upon as I sharpen my technical capabilities.
+
+---
+## Development & Academic Integrity
+* **Workflow & Logic**: The core conceptual architecture, spatial indexing strategy, and multi-pass classification logic were entirely designed and structured by the author.
+* **Implementation**: Large Language Models (AI) were utilized strictly as technical coding assistants to accelerate the implementation of Python syntax, ensuring full compatibility with the native `QgsProcessingAlgorithm` framework.
+
+
